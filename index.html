@@ -300,33 +300,18 @@
       
         
           
-            <p>来还债了……趁着下午放假，把以前没有好好学的在好好做个记录。</p>
-<hr>
-<h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a><strong>异常</strong></h1><p><strong>什么是异常？</strong>java代码在运行时出现的问题就是异常，在java中 ，把异常信息封装成一个类，当出现问题是，就会创建异常对象相关的信息（如异常的位置，原因等）</p>
-<p><strong>Throwable类</strong> Throwable位于java.lang包下 ，是 Java 语言中所有错误（Error）或异常(Exception)的超类</p>
-<p><strong>错误（Error）</strong>相当于癌症，所以当程序报出Error时候，只能去修改代码</p>
-<p><strong>异常(Exception)</strong>相当于感冒，我们将异常处理掉，程序可以继续运行</p>
-<hr>
-<p>下面我要通过一个事例说明程序异常对象的产生和如何处理<br>    下面是一个ArrayIndexOutOfBoundsException(数组越界异常)：<br>     <img src="./1534262859748.png" alt="Alt text"></p>
-<hr>
-<p><strong>异常中的关键字</strong><br><strong>throw</strong> 在方法内部，抛出异常的对象，在throw后面，必须写出new 对象，必须是异常的对象，必须是Exception或者子类<br><strong>throws</strong>用于方法的声明上，表明方法，可能出现异常，请调用者处理，throws后面必须写异常类的类名</p>
-<hr>
-<p><strong>*异常中的处理方式</strong></p>
-<blockquote>
-<p>Blockquote    try{被检测的代码<br>            可能出现异常的代码<br>        }catch(异常类名 变量){<br>            异常的处理方式<br>            循环 判断 调用方法 变量<br>         }finally{<br>             必须要执行的代码}        </p>
-</blockquote>
-<p>支持多catch处理，但是越高级父类越写在后面<br>finally意思是无论有没有异常都要执行其中的代码</p>
-<hr>
-<p><strong>异常的分类</strong><br>编译异常:调用抛出的方法，不处理编译失败<br>运行时异常：抛出的异常的RuntimeException类，或者他的子类</p>
-<p>运行时异常的特点：方法的声明上，不需要throws句。 </p>
-<hr>
-<p><strong>方法重写时候异常的处理</strong><br>   父类的方法，如果抛出异常，子类重写后，可以不抛出异常，也可以抛出异常，但是，如果子类要抛，抛出的异常不能大于（只的是继承关系）父类的异常</p>
-<hr>
-<p><strong>Throwable类中的方法</strong><br> void printStackTrace() 将异常信息追踪到标准的错误流，JVM默认调用这个方法</p>
-<hr>
-<p><strong>自定义异常</strong><br>    继承Exception,或者继承RuntimeException<br>    大部分是继承RuntimeException</p>
+          来还债了……趁着下午放假，把以前没有好好学的在好好做个记录。
 
-          
+异常什么是异常？java代码在运行时出现的问题就是异常，在java中 ，把异常信息封装成一个类，当出现问题是，就会创建异常对象相关的信息（如异常的位置，原因等）
+Throwable类 Throwable位于java.lang包下 ，是 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/14/异常/#more" rel="contents">
+              閱讀全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -444,13 +429,20 @@
       
         
           
-            <pre><code>重新编译 : hexo g
+          重新编译 : hexo g
 
 然后部署 ： hexo d
 
 启动服务器 ： hexo s
-</code></pre>
+
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/12/部署/#more" rel="contents">
+              閱讀全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
