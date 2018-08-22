@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="lok_666">
 <meta property="og:description" content="##Mybatis知识总结关联查询包括一对一查询，一对多查询，多对一查询，多对多查询下面是一对一查询：&amp;lt;select id=&amp;quot;getStuAndTeas&amp;quot; resultMap=&amp;quot;stu_tea_map&amp;quot;&amp;gt;       select * from stu_info s, teacher_info t       where s.tea_id=t.t">
 <meta property="og:locale" content="zh-hk">
-<meta property="og:updated_time" content="2018-08-22T02:25:18.039Z">
+<meta property="og:updated_time" content="2018-08-22T07:17:12.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MyBatis知识总结">
 <meta name="twitter:description" content="##Mybatis知识总结关联查询包括一对一查询，一对多查询，多对一查询，多对多查询下面是一对一查询：&amp;lt;select id=&amp;quot;getStuAndTeas&amp;quot; resultMap=&amp;quot;stu_tea_map&amp;quot;&amp;gt;       select * from stu_info s, teacher_info t       where s.tea_id=t.t">
@@ -340,7 +340,7 @@
         &lt;result property=&quot;sName&quot; column=&quot;s_name&quot;/&gt;
          &lt;association property=&quot;teacher&quot;  javaType=&quot;org.lanqiao.bean.Teacher&quot;&gt;
             &lt;id property=&quot;teaId&quot; column=&quot;tea_id&quot;/&gt;
-            &lt;result property=&quot;teaName&quot; column=&quot;tea_name&quot;/&gt;
+            &lt;result property=&quot;teaName&quot;column=&quot;tea_name&quot;/&gt;
         &lt;/association&gt;
     &lt;/resultMap&gt;</code><br>resultMap:指的是结果集映射关系，需要自己配置<br>property;指的是javaBean中的属性<br>column;指的是数据库中的字段<br>association:主要用于一对一查询<br>javaType:用来指定改属性的类型</p>
 <p>下面是<strong>一对多查询</strong>：<br>`<!--查询制定班级的学生信息--></p>
